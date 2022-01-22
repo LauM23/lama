@@ -29,29 +29,47 @@ public class Finestra1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName(""); // NOI18N
+        setResizable(false);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\murat\\OneDrive\\Documenti\\GitHub\\Lama\\Esame2022\\media\\Portrait_de_Dante.png")); // NOI18N
         jLabel1.setText("jLabel1");
+        jLabel1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jLabel1KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(216, 216, 216)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 693, Short.MAX_VALUE))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 206, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
+
+        int x = jLabel1.getX();
+        int y = jLabel1.getY();
+
+        if (evt.getKeyCode() == evt.VK_LEFT) {
+
+            jLabel1.setLocation(x - 4, y);
+        }
+    }//GEN-LAST:event_jLabel1KeyPressed
 
     /**
      * @param args the command line arguments
