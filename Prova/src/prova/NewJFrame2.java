@@ -2,47 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package esame2022;
-
-import java.awt.event.ActionListener;
-import java.awt.event.KeyListener;
-import javax.swing.Timer;
+package prova;
 
 /**
  *
  * @author murat
  */
-public class NewJFrame extends javax.swing.JFrame implements ActionListener, KeyListener {
-    int GAME_WIDTH = 1000;
-    int GAME_HEIGHT = 600;
-    /*
-    
-    */
-    int playerh = 110;
-    int players = 80;
-    int timeD = 15;
-    int speed = 15;
-    int speedPlayer = 7;
-
-    Timer t.start  = new Timer(timeD, listener: this) ; 
-    private ActionListener listener;
-    HasMap<String, Game0bg> 
-    public void int() {
-        t.start () ;
-        hs = new HasMap<> () ;
-        hs.put("player" ,new Player)
-        
-                
-        
-    }
-    
-
- 
+public class NewJFrame2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame
+     * Creates new form NewJFrame2
      */
-    public NewJFrame() {
+    public NewJFrame2() {
         initComponents();
     }
 
@@ -58,9 +29,8 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener, Key
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\murat\\OneDrive\\Documenti\\GitHub\\Lama\\Esame2022\\media\\Portrait_de_Dante.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\murat\\OneDrive\\Documenti\\GitHub\\Lama\\Esame2022\\media\\Dante.png")); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -78,44 +48,33 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener, Key
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(122, 122, 122)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(236, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(149, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(68, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(62, 62, 62))
+                .addGap(0, 12, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1024, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
-
-        int x = jLabel1.getX();
-        int y = jLabel1.getY();
-
-        System.out.println("entro");
-
-        if (evt.getKeyCode() == evt.VK_LEFT) {
-
-            jLabel1.setLocation(x - 4, y);
-        }
-    }//GEN-LAST:event_jLabel1KeyPressed
-
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-        // TODO add your handling code here:
-        System.out.println("ok");
+    System.out.println("ok");
 
         int x = jLabel1.getX();
         int y = jLabel1.getY();
 
-        jLabel1.setLocation(x - 4, y);
-
+        jLabel1.setLocation(x - 4, y);    // TODO add your handling code here:
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
+ 
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1KeyPressed
 
     /**
      * @param args the command line arguments
@@ -134,25 +93,21 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener, Key
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-
-                new NewJFrame().setVisible(true);
+                new NewJFrame2().setVisible(true);
             }
         });
     }

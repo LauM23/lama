@@ -6,43 +6,26 @@ package esame2022;
 
 import java.awt.event.ActionListener;
 import java.awt.event.KeyListener;
-import javax.swing.Timer;
 
 /**
  *
  * @author murat
  */
-public class NewJFrame extends javax.swing.JFrame implements ActionListener, KeyListener {
-    int GAME_WIDTH = 1000;
-    int GAME_HEIGHT = 600;
+public class NewJFrame11 extends javax.swing.JFrame implements ActionListener, KeyListener {
+
     /*
     
-    */
+     */
     int playerh = 110;
     int players = 80;
     int timeD = 15;
     int speed = 15;
     int speedPlayer = 7;
 
-    Timer t.start  = new Timer(timeD, listener: this) ; 
-    private ActionListener listener;
-    HasMap<String, Game0bg> 
-    public void int() {
-        t.start () ;
-        hs = new HasMap<> () ;
-        hs.put("player" ,new Player)
-        
-                
-        
-    }
-    
-
- 
-
     /**
      * Creates new form NewJFrame
      */
-    public NewJFrame() {
+    public NewJFrame11() {
         initComponents();
     }
 
@@ -59,6 +42,7 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener, Key
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setName("NewJFrame11"); // NOI18N
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\murat\\OneDrive\\Documenti\\GitHub\\Lama\\Esame2022\\media\\Portrait_de_Dante.png")); // NOI18N
         jLabel1.setText("jLabel1");
@@ -134,25 +118,26 @@ public class NewJFrame extends javax.swing.JFrame implements ActionListener, Key
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
+            java.util.logging.Logger.getLogger(NewJFrame11.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
+            java.util.logging.Logger.getLogger(NewJFrame11.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
+            java.util.logging.Logger.getLogger(NewJFrame11.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class
+            java.util.logging.Logger.getLogger(NewJFrame11.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
 
-                new NewJFrame().setVisible(true);
+                new NewJFrame11().setVisible(true);
             }
         });
     }
