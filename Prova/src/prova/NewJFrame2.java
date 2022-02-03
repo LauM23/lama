@@ -4,17 +4,31 @@
  */
 package prova;
 
+import Java.awt.Image;
+import java.until.Timer;
+import java.until.TimerTask;
+import java.swing.ImageIcon;
+
 /**
  *
  * @author murat
  */
 public class NewJFrame2 extends javax.swing.JFrame {
-
+    
+    mioSlideShow MS;
+    Timer TS;
+    
+   
     /**
      * Creates new form NewJFrame2
      */
     public NewJFrame2() {
         initComponents();
+        
+        MS = new mioSlideShow () {
+        
+        TS = new Timer ();
+        }
     }
 
     /**
@@ -63,7 +77,7 @@ public class NewJFrame2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    System.out.println("ok");
+        System.out.println("ok");
 
         int x = jLabel1.getX();
         int y = jLabel1.getY();
@@ -72,13 +86,22 @@ public class NewJFrame2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel1KeyPressed
- 
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel1KeyPressed
 
+    }//GEN-LAST:event_jLabel1KeyPressed
+    private void jbStartActionPerformed (java.awt.event.ActionEvent evt) {
+        
+        TS.ScheduleAtFixedRate(MS, 0, 1000) ;
+    }
+    
+    private void jbStopActionPErformed (java.awt.event.ActionEvent evt) {
+        
+        TS.cancel();
+    }
+    
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -102,7 +125,6 @@ public class NewJFrame2 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(NewJFrame2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -111,8 +133,44 @@ public class NewJFrame2 extends javax.swing.JFrame {
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+    class mioSlideShow extends TimerTask {
+       
+        long contatore = 0;
+        boolean esegui;
+        
+        public mioSlideShow() {
+            contatore = 0
+                    esegui = true
+        }
+        
+        public void run(){
+            if (esegui == true){
+                ImageICon A = new ImageIcon("media/slide/A" + contatore + ".jpg") ;
+                Image B = A.getImage ().getScaledInstance(lbSlideShow.getWidth(),
+                lbSlideShow.setIcon(new ImageIcon(B)) ;
+                
+                contatore = contatore + 1;
+                System.out.printIn("LA VARIABILE CONTATORE VALE" + contatore) ;
+            
+               
+                if (contatore > 3) {
+                    contatore = 0;
+                }
+            }
+        
+               
+        }
+    }
+
+
+
+
+
+
 }
