@@ -39,7 +39,7 @@ public class Provalau extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(0, -2, 760, 472);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoinf1.2B.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\prsfondo.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(0, 0, 760, 470);
