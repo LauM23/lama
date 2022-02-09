@@ -36,18 +36,17 @@ public class Provalau extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(0, -2, 760, 472);
+        jLabel2.setBounds(0, 0, 660, 472);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\prsfondo.jpg")); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoanimepic.jpg")); // NOI18N
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 760, 470);
+        jLabel1.setBounds(0, 0, 660, 470);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 760, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
