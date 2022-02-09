@@ -8,32 +8,17 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
-import java.util.TimerTask;
 import javax.swing.ImageIcon;
 
 /**
  *
  * @author lauma
  */
-public class Provalau extends javax.swing.JFrame {
-
-    java.util.Timer tmrAttesa;
-    MiaAttesa ttkAttesa;
+public class Provalau1 extends javax.swing.JFrame {
 
     /**
      * Creates new form Provalau
      */
-    public Provalau() {
-        initComponents();
-        
-        btContinua.setVisible(false);
-        
-        ttkAttesa = new MiaAttesa();
-        tmrAttesa = new java.util.Timer();
-
-        tmrAttesa.schedule (ttkAttesa, 0, 1000);
-        
-    }
 
     public void paint(Graphics g) {
         super.paint(g);
@@ -51,29 +36,12 @@ public class Provalau extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        btContinua = new javax.swing.JButton();
         lbGif = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(null);
-
-        btContinua.setBackground(new java.awt.Color(255, 255, 255));
-        btContinua.setForeground(new java.awt.Color(255, 153, 0));
-        btContinua.setText("CONTINUA");
-        btContinua.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btContinuaMouseClicked(evt);
-            }
-        });
-        btContinua.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btContinuaActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btContinua);
-        btContinua.setBounds(300, 430, 90, 21);
 
         lbGif.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
         jPanel2.add(lbGif);
@@ -97,23 +65,6 @@ public class Provalau extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btContinuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btContinuaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btContinuaActionPerformed
-
-    private void btContinuaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btContinuaMouseClicked
-        // TODO add your handling code here:
-
-        ImageIcon A = new ImageIcon("media/Nuvolabase.png");
-
-        Image B = A.getImage().getScaledInstance(lbSfondo.getWidth(), lbSfondo.getHeight(), java.awt.Image.SCALE_SMOOTH);
-
-        lbSfondo.setIcon(new ImageIcon(B));
-
-// TODO add your handling code here:
-
-    }//GEN-LAST:event_btContinuaMouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -131,52 +82,28 @@ public class Provalau extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Provalau.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Provalau.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Provalau.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Provalau.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Provalau().setVisible(true);
+                new Provalau1().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btContinua;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbGif;
     private javax.swing.JLabel lbSfondo;
     // End of variables declaration//GEN-END:variables
-
-    class MiaAttesa extends TimerTask {
-
-        long contatore;
-
-        public MiaAttesa() {
-            contatore = 0;
-        } // endof costruttore
-
-        public void run() {
-
-            contatore = contatore + 1;
-
-            if (contatore > 5) {
-                contatore = 0;
-
-                btContinua.setVisible(true);
-
-            } // endif contatore
-
-        } // endof run
-
-    } // endof miaAttesa
-
 }
