@@ -25,14 +25,14 @@ public class Provalau2 extends javax.swing.JFrame {
      */
     public Provalau2() {
         initComponents();
-        
+
         lbNuvola.setVisible(false);
-        
+
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
 
-        tmrAttesa.schedule (ttkAttesa, 0, 1000);
-        
+        tmrAttesa.schedule(ttkAttesa, 0, 1000);
+
     }
 
     public void paint(Graphics g) {
@@ -76,7 +76,7 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(btContinua);
         btContinua.setBounds(300, 430, 90, 21);
 
-        lbNuvola.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\Nuvolabase.png")); // NOI18N
+        lbNuvola.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvolaAI-01.png")); // NOI18N
         jPanel2.add(lbNuvola);
         lbNuvola.setBounds(0, 0, 660, 470);
 
