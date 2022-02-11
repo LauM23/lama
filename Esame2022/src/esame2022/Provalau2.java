@@ -26,7 +26,18 @@ public class Provalau2 extends javax.swing.JFrame {
      */
     public Provalau2() {
         initComponents();
+        
+        ImageIcon A = new ImageIcon("media/nuvola1-01.png");
+        Image B = A.getImage().getScaledInstance(lbNuvola1.getWidth(), lbNuvola1.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNuvola1.setIcon(new ImageIcon(B));
 
+        A = new ImageIcon("media/nuvola2-01.png");
+        B = A.getImage().getScaledInstance(lbNuvola2.getWidth(), lbNuvola2.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNuvola2.setIcon(new ImageIcon(B));
+        
+        
+        
+        
         lbNuvola1.setVisible(false);
         
         lbNuvola2.setVisible(false);
@@ -119,7 +130,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
         ImageIcon A = new ImageIcon("media/Nuvolabase.png");
 
-        Image B = A.getImage().getScaledInstance(lbSfondo.getWidth(), lbSfondo.getHeight(), java.awt.Image.SCALE_SMOOTH);
+        Image B = A.getImage().getScaledInstance(lbSfondo.getWidth(), lbSfondo.getHeight(), java.awt.Image.SCALE_DEFAULT);
 
         lbSfondo.setIcon(new ImageIcon(B));
 
@@ -215,8 +226,11 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore 10
             
             
-            if (contatore > 10000) { contatore = 0; }
             
+            
+            
+            
+            if (contatore > 10000) { contatore = 0; }
             
 
         } // endof run 
