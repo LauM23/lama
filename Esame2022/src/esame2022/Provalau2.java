@@ -19,6 +19,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
     java.util.Timer tmrAttesa;
     MiaAttesa ttkAttesa;
+    
 
     /**
      * Creates new form Provalau
@@ -26,15 +27,17 @@ public class Provalau2 extends javax.swing.JFrame {
     public Provalau2() {
         initComponents();
 
-        lbNuvola.setVisible(false);
+        lbNuvola1.setVisible(false);
+        
+        lbNuvola2.setVisible(false);
 
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
 
-        tmrAttesa.schedule(ttkAttesa, 0, 1000);
+        tmrAttesa.schedule(ttkAttesa, 0, 1000);  //1000=1sec
 
     }
-
+    
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2d = (Graphics2D) g;
@@ -52,7 +55,8 @@ public class Provalau2 extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         btContinua = new javax.swing.JButton();
-        lbNuvola = new javax.swing.JLabel();
+        lbNuvola2 = new javax.swing.JLabel();
+        lbNuvola1 = new javax.swing.JLabel();
         lbGif = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
 
@@ -74,11 +78,15 @@ public class Provalau2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btContinua);
-        btContinua.setBounds(300, 430, 90, 21);
+        btContinua.setBounds(300, 430, 90, 23);
 
-        lbNuvola.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvolaAI-01.png")); // NOI18N
-        jPanel2.add(lbNuvola);
-        lbNuvola.setBounds(0, 0, 660, 470);
+        lbNuvola2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvolaAIb-01.png")); // NOI18N
+        jPanel2.add(lbNuvola2);
+        lbNuvola2.setBounds(0, 0, 660, 470);
+
+        lbNuvola1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvola1-01.png")); // NOI18N
+        jPanel2.add(lbNuvola1);
+        lbNuvola1.setBounds(0, 0, 660, 470);
 
         lbGif.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
         jPanel2.add(lbGif);
@@ -159,7 +167,8 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JButton btContinua;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbGif;
-    private javax.swing.JLabel lbNuvola;
+    private javax.swing.JLabel lbNuvola1;
+    private javax.swing.JLabel lbNuvola2;
     private javax.swing.JLabel lbSfondo;
     // End of variables declaration//GEN-END:variables
 
@@ -175,14 +184,42 @@ public class Provalau2 extends javax.swing.JFrame {
 
             contatore = contatore + 1;
 
-            if (contatore > 7) {
-                contatore = 0;
+            if (contatore == 7 ) {
+               // contatore = 0; 
 
-                lbNuvola.setVisible(true);
-
+                lbNuvola1.setVisible(true);
+              
             } // endif contatore
+            
+            
+            if (contatore == 8 ) {
+               // contatore = 0; 
 
-        } // endof run
+                lbNuvola2.setVisible(true);
+            
+            } // endif contatore
+            
+            
+            if (contatore == 10) {
+
+                lbNuvola1.setVisible (false);
+
+            } // endif contatore 10
+            
+           
+            
+            if (contatore == 12) {
+
+                lbNuvola2.setVisible (false);
+
+            } // endif contatore 10
+            
+            
+            if (contatore > 10000) { contatore = 0; }
+            
+            
+
+        } // endof run 
 
     } // endof miaAttesa
 
