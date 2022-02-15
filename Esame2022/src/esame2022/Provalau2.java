@@ -203,7 +203,7 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore
             
             
-            if (contatore == 8 ) {
+            if (contatore == 9 ) {
                // contatore = 0; 
 
                 lbNuvola2.setVisible(true);
@@ -211,7 +211,7 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore
             
             
-            if (contatore == 10) {
+            if (contatore == 11) {
 
                 lbNuvola1.setVisible (false);
 
@@ -219,7 +219,7 @@ public class Provalau2 extends javax.swing.JFrame {
             
            
             
-            if (contatore == 12) {
+            if (contatore == 13) {
 
                 lbNuvola2.setVisible (false);
 
