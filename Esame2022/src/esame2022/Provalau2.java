@@ -66,6 +66,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         btContinua = new javax.swing.JButton();
+        lbVirgilio = new javax.swing.JLabel();
         lbNuvola2 = new javax.swing.JLabel();
         lbNuvola1 = new javax.swing.JLabel();
         lbGif = new javax.swing.JLabel();
@@ -89,7 +90,11 @@ public class Provalau2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btContinua);
-        btContinua.setBounds(300, 430, 90, 23);
+        btContinua.setBounds(300, 430, 90, 21);
+
+        lbVirgilio.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\movirg1.gif")); // NOI18N
+        jPanel2.add(lbVirgilio);
+        lbVirgilio.setBounds(0, 0, 660, 470);
 
         lbNuvola2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvolaAIb-01.png")); // NOI18N
         jPanel2.add(lbNuvola2);
@@ -181,6 +186,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JLabel lbNuvola1;
     private javax.swing.JLabel lbNuvola2;
     private javax.swing.JLabel lbSfondo;
+    private javax.swing.JLabel lbVirgilio;
     // End of variables declaration//GEN-END:variables
 
     class MiaAttesa extends TimerTask {
