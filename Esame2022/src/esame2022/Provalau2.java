@@ -27,20 +27,37 @@ public class Provalau2 extends javax.swing.JFrame {
     public Provalau2() {
         initComponents();
         
-        ImageIcon A = new ImageIcon("media/nuvola1-01.png");
+        ImageIcon A = new ImageIcon("media/1nuvola-01.png");
         Image B = A.getImage().getScaledInstance(lbNuvola1.getWidth(), lbNuvola1.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola1.setIcon(new ImageIcon(B));
 
-        A = new ImageIcon("media/nuvola2-01.png");
+        A = new ImageIcon("media/2nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola2.getWidth(), lbNuvola2.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola2.setIcon(new ImageIcon(B));
         
+        A = new ImageIcon("media/3nuvola-01.png");
+        B = A.getImage().getScaledInstance(lbNuvola3.getWidth(), lbNuvola3.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNuvola3.setIcon(new ImageIcon(B));
+        
+        A = new ImageIcon("media/4nuvola-01.png");
+        B = A.getImage().getScaledInstance(lbNuvola4.getWidth(), lbNuvola4.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNuvola4.setIcon(new ImageIcon(B));
+        
+        A = new ImageIcon("media/5nuvola-01.png");
+        B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNuvola5.setIcon(new ImageIcon(B));
         
         
         
         lbNuvola1.setVisible(false);
         
         lbNuvola2.setVisible(false);
+        
+        lbNuvola3.setVisible(false);
+        
+        lbNuvola4.setVisible(false);
+        
+        lbNuvola5.setVisible(false);
 
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
@@ -65,16 +82,51 @@ public class Provalau2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        btContinua = new javax.swing.JButton();
-        lbVirgilio = new javax.swing.JLabel();
+        lbNuvola5 = new javax.swing.JLabel();
+        lbNuvola4 = new javax.swing.JLabel();
+        lbNuvola3 = new javax.swing.JLabel();
         lbNuvola2 = new javax.swing.JLabel();
         lbNuvola1 = new javax.swing.JLabel();
-        lbGif = new javax.swing.JLabel();
+        lbVirgilio = new javax.swing.JLabel();
+        lbDante = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
+        btContinua = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(null);
+
+        lbNuvola5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\5nuvola-01.png")); // NOI18N
+        jPanel2.add(lbNuvola5);
+        lbNuvola5.setBounds(0, 0, 660, 470);
+
+        lbNuvola4.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\4nuvola-01.png")); // NOI18N
+        jPanel2.add(lbNuvola4);
+        lbNuvola4.setBounds(0, 0, 660, 470);
+
+        lbNuvola3.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\3nuvola-01.png")); // NOI18N
+        jPanel2.add(lbNuvola3);
+        lbNuvola3.setBounds(0, 0, 660, 470);
+
+        lbNuvola2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\2nuvola-01.png")); // NOI18N
+        jPanel2.add(lbNuvola2);
+        lbNuvola2.setBounds(0, 0, 660, 470);
+
+        lbNuvola1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\1nuvola-01.png")); // NOI18N
+        jPanel2.add(lbNuvola1);
+        lbNuvola1.setBounds(0, 0, 660, 470);
+
+        lbVirgilio.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\movirg1.gif")); // NOI18N
+        jPanel2.add(lbVirgilio);
+        lbVirgilio.setBounds(0, 0, 660, 470);
+
+        lbDante.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
+        jPanel2.add(lbDante);
+        lbDante.setBounds(0, 0, 660, 472);
+
+        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoanimepic.jpg")); // NOI18N
+        jPanel2.add(lbSfondo);
+        lbSfondo.setBounds(0, 0, 660, 470);
 
         btContinua.setBackground(new java.awt.Color(255, 255, 255));
         btContinua.setForeground(new java.awt.Color(255, 153, 0));
@@ -91,26 +143,6 @@ public class Provalau2 extends javax.swing.JFrame {
         });
         jPanel2.add(btContinua);
         btContinua.setBounds(300, 430, 90, 21);
-
-        lbVirgilio.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\movirg1.gif")); // NOI18N
-        jPanel2.add(lbVirgilio);
-        lbVirgilio.setBounds(0, 0, 660, 470);
-
-        lbNuvola2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvolaAIb-01.png")); // NOI18N
-        jPanel2.add(lbNuvola2);
-        lbNuvola2.setBounds(0, 0, 660, 470);
-
-        lbNuvola1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\nuvola1-01.png")); // NOI18N
-        jPanel2.add(lbNuvola1);
-        lbNuvola1.setBounds(0, 0, 660, 470);
-
-        lbGif.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
-        jPanel2.add(lbGif);
-        lbGif.setBounds(0, 0, 660, 472);
-
-        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoanimepic.jpg")); // NOI18N
-        jPanel2.add(lbSfondo);
-        lbSfondo.setBounds(0, 0, 660, 470);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -182,9 +214,12 @@ public class Provalau2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btContinua;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lbGif;
+    private javax.swing.JLabel lbDante;
     private javax.swing.JLabel lbNuvola1;
     private javax.swing.JLabel lbNuvola2;
+    private javax.swing.JLabel lbNuvola3;
+    private javax.swing.JLabel lbNuvola4;
+    private javax.swing.JLabel lbNuvola5;
     private javax.swing.JLabel lbSfondo;
     private javax.swing.JLabel lbVirgilio;
     // End of variables declaration//GEN-END:variables
@@ -201,7 +236,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
             contatore = contatore + 1;
 
-            if (contatore == 7 ) {
+            if (contatore == 6 ) {
                // contatore = 0; 
 
                 lbNuvola1.setVisible(true);
@@ -209,7 +244,7 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore
             
             
-            if (contatore == 9 ) {
+            if (contatore == 8 ) {
                // contatore = 0; 
 
                 lbNuvola2.setVisible(true);
@@ -217,7 +252,7 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore
             
             
-            if (contatore == 11) {
+            if (contatore == 10) {
 
                 lbNuvola1.setVisible (false);
 
@@ -225,12 +260,59 @@ public class Provalau2 extends javax.swing.JFrame {
             
            
             
-            if (contatore == 13) {
+            if (contatore == 12) {
 
                 lbNuvola2.setVisible (false);
 
             } // endif contatore 10
             
+            
+            
+            if (contatore == 13 ) {
+               // contatore = 0; 
+
+                lbNuvola3.setVisible(true);
+            
+            } // endif contatore 10
+            
+            
+             if (contatore == 25) {
+
+                lbNuvola3.setVisible (false);
+
+            } // endif contatore 10
+            
+             
+             
+            if (contatore == 26 ) {
+               // contatore = 0; 
+
+                lbNuvola4.setVisible(true);
+            
+            } // endif contatore 10
+            
+            
+            if (contatore == 38) {
+
+                lbNuvola4.setVisible (false);
+
+            } // endif contatore 10
+            
+            
+            
+            if (contatore == 41 ) {
+               // contatore = 0; 
+
+                lbNuvola5.setVisible(true);
+            
+            } // endif contatore 10
+            
+            
+            if (contatore == 50) {
+
+                lbNuvola5.setVisible (false);
+
+            } // endif contatore 10
             
             
             
