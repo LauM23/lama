@@ -82,6 +82,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        lbLibro = new javax.swing.JLabel();
         lbNuvola5 = new javax.swing.JLabel();
         lbNuvola4 = new javax.swing.JLabel();
         lbNuvola3 = new javax.swing.JLabel();
@@ -95,6 +96,10 @@ public class Provalau2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(null);
+
+        lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov.gif")); // NOI18N
+        jPanel2.add(lbLibro);
+        lbLibro.setBounds(0, 0, 660, 460);
 
         lbNuvola5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\5nuvola-01.png")); // NOI18N
         jPanel2.add(lbNuvola5);
@@ -120,7 +125,7 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(lbVirgilio);
         lbVirgilio.setBounds(0, 0, 660, 470);
 
-        lbDante.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
+        lbDante.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov6.gif")); // NOI18N
         jPanel2.add(lbDante);
         lbDante.setBounds(0, 0, 660, 472);
 
@@ -215,6 +220,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JButton btContinua;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbDante;
+    private javax.swing.JLabel lbLibro;
     private javax.swing.JLabel lbNuvola1;
     private javax.swing.JLabel lbNuvola2;
     private javax.swing.JLabel lbNuvola3;
@@ -252,7 +258,7 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore
             
             
-            if (contatore == 10) {
+            if (contatore == 9) {
 
                 lbNuvola1.setVisible (false);
 
@@ -260,7 +266,7 @@ public class Provalau2 extends javax.swing.JFrame {
             
            
             
-            if (contatore == 12) {
+            if (contatore == 11) {
 
                 lbNuvola2.setVisible (false);
 
