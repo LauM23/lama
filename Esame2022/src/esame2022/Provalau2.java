@@ -58,6 +58,10 @@ public class Provalau2 extends javax.swing.JFrame {
         lbNuvola4.setVisible(false);
         
         lbNuvola5.setVisible(false);
+        
+        //QUI METTERE LBPROVA dove partirà il gioco FALSE
+        
+        
 
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
@@ -82,6 +86,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        lbProva = new javax.swing.JLabel();
         lbLibro = new javax.swing.JLabel();
         lbNuvola5 = new javax.swing.JLabel();
         lbNuvola4 = new javax.swing.JLabel();
@@ -96,6 +101,16 @@ public class Provalau2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(null);
+
+        lbProva.setForeground(new java.awt.Color(255, 255, 51));
+        lbProva.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
+        lbProva.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbProvaMouseClicked(evt);
+            }
+        });
+        jPanel2.add(lbProva);
+        lbProva.setBounds(20, 290, 250, 100);
 
         lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov.gif")); // NOI18N
         jPanel2.add(lbLibro);
@@ -180,6 +195,15 @@ public class Provalau2 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btContinuaMouseClicked
 
+    private void lbProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaMouseClicked
+        // TODO add your handling code here:
+        
+        Esame2022.finGioco.setVisible ( true );
+        
+        Esame2022.finIniziale.setVisible( false );  // nasconde sè stessa
+        
+    }//GEN-LAST:event_lbProvaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -226,6 +250,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JLabel lbNuvola3;
     private javax.swing.JLabel lbNuvola4;
     private javax.swing.JLabel lbNuvola5;
+    private javax.swing.JLabel lbProva;
     private javax.swing.JLabel lbSfondo;
     private javax.swing.JLabel lbVirgilio;
     // End of variables declaration//GEN-END:variables
