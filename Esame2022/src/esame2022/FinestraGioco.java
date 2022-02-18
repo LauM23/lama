@@ -4,12 +4,18 @@
  */
 package esame2022;
 
+import java.util.TimerTask;
+
 /**
  *
  * @author lauma
  */
 public class FinestraGioco extends javax.swing.JFrame {
- 
+
+    ContoRovescia mttContoRovescia;
+    java.util.Timer tmrContoRovescia;
+    int numerotrovati = 0;
+
     /**
      * Creates new form FinestraGioco
      */
@@ -28,6 +34,8 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lbProvaogg = new javax.swing.JLabel();
+        btTimer = new javax.swing.JButton();
+        lbTimer = new javax.swing.JLabel();
         lbProvaoggNOME = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -42,7 +50,18 @@ public class FinestraGioco extends javax.swing.JFrame {
             }
         });
         jPanel1.add(lbProvaogg);
-        lbProvaogg.setBounds(10, 10, 360, 180);
+        lbProvaogg.setBounds(10, 40, 360, 180);
+
+        btTimer.setText("START");
+        btTimer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btTimerActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btTimer);
+        btTimer.setBounds(280, 290, 90, 30);
+        jPanel1.add(lbTimer);
+        lbTimer.setBounds(180, 0, 300, 80);
 
         lbProvaoggNOME.setForeground(new java.awt.Color(255, 255, 0));
         lbProvaoggNOME.setText("SPADA");
@@ -52,6 +71,11 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoinf.jpg")); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+        });
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 660, 470);
 
@@ -71,13 +95,29 @@ public class FinestraGioco extends javax.swing.JFrame {
 
     private void lbProvaoggMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaoggMouseClicked
         // TODO add your handling code here:
-        
+
+        numerotrovati = numerotrovati + 1;
         this.lbProvaoggNOME.setVisible(false);
         this.lbProvaogg.setVisible(false);
-        
-        
-        
+
+
     }//GEN-LAST:event_lbProvaoggMouseClicked
+
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+        // TODO add your handling code here:
+
+        
+    }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void btTimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTimerActionPerformed
+        // TODO add your handling code here:
+        
+        mttContoRovescia = new ContoRovescia();
+        tmrContoRovescia = new java.util.Timer();
+        tmrContoRovescia.schedule(mttContoRovescia, 0, 1000);
+
+        
+    }//GEN-LAST:event_btTimerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,9 +155,45 @@ public class FinestraGioco extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btTimer;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbProvaogg;
     private javax.swing.JLabel lbProvaoggNOME;
+    private javax.swing.JLabel lbTimer;
     // End of variables declaration//GEN-END:variables
+
+    class ContoRovescia extends TimerTask {
+
+        long contatore;
+
+        public ContoRovescia() {
+            contatore = 180; //3min
+        } // endof costruttore
+
+        public void run() {
+
+            contatore = contatore - 1;
+
+            if (contatore <= 0) { //qui finito tempo
+                contatore = 180;
+
+                if (numerotrovati < 8) {
+                    numerotrovati = 0;
+                }
+
+            } // endif contatore   
+
+            // lbTimer.setText("Rimangono " + contatore + " secondi"); 
+            lbTimer.setText ("Trovati" + numerotrovati + " Rimangono " + contatore + " secondi");  
+
+            if (numerotrovati == 8) {
+
+                // finestravittoria
+            }
+
+        } // endof run
+
+    } // endof ContoRovescia
+
 }

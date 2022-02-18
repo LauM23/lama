@@ -183,6 +183,9 @@ public class Provalau2 extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         Esame2022.finGioco.setVisible(true);
+        
+        Esame2022.finGioco.btTimer.setVisible(false);
+        Esame2022.finGioco.btTimer.doClick();
 
         Esame2022.finIniziale.setVisible(false);  // nasconde sè stessa    
 
