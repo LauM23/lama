@@ -15,6 +15,8 @@ public class FinestraGioco extends javax.swing.JFrame {
     ContoRovescia mttContoRovescia;
     java.util.Timer tmrContoRovescia;
     int numerotrovati = 0;
+    
+    public MiaClipAudio MC1;
 
     /**
      * Creates new form FinestraGioco
@@ -99,6 +101,8 @@ public class FinestraGioco extends javax.swing.JFrame {
         numerotrovati = numerotrovati + 1;
         this.lbProvaoggNOME.setVisible(false);
         this.lbProvaogg.setVisible(false);
+        
+        MC1 = new MiaClipAudio ("media/button-09a.mp3");
 
 
     }//GEN-LAST:event_lbProvaoggMouseClicked
