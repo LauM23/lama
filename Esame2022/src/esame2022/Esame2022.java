@@ -12,6 +12,8 @@ public class Esame2022 {
 
     public static Provalau2        finIniziale;
     public static FinestraGioco    finGioco;
+    
+
 
 
 
@@ -19,14 +21,13 @@ public class Esame2022 {
         // TODO code application logic here
         
         finIniziale = new Provalau2  ();
-        finIniziale.setSize (661,472);
         finIniziale.setLocation(0, 0);
         finIniziale.setVisible(true);
         
         finGioco = new FinestraGioco ();
-        finGioco.setSize (661,472);
         finGioco.setLocation (25,25);
         finGioco.setVisible(false);
+        
 
     }
     

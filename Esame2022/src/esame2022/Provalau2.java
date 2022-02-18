@@ -19,14 +19,13 @@ public class Provalau2 extends javax.swing.JFrame {
 
     java.util.Timer tmrAttesa;
     MiaAttesa ttkAttesa;
-    
 
     /**
      * Creates new form Provalau
      */
     public Provalau2() {
         initComponents();
-        
+
         ImageIcon A = new ImageIcon("media/1nuvola-01.png");
         Image B = A.getImage().getScaledInstance(lbNuvola1.getWidth(), lbNuvola1.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola1.setIcon(new ImageIcon(B));
@@ -34,42 +33,39 @@ public class Provalau2 extends javax.swing.JFrame {
         A = new ImageIcon("media/2nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola2.getWidth(), lbNuvola2.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola2.setIcon(new ImageIcon(B));
-        
+
         A = new ImageIcon("media/3nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola3.getWidth(), lbNuvola3.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola3.setIcon(new ImageIcon(B));
-        
+
         A = new ImageIcon("media/4nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola4.getWidth(), lbNuvola4.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola4.setIcon(new ImageIcon(B));
-        
+
         A = new ImageIcon("media/5nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola5.setIcon(new ImageIcon(B));
-        
-        
-        
+
         lbNuvola1.setVisible(false);
-        
+
         lbNuvola2.setVisible(false);
-        
+
         lbNuvola3.setVisible(false);
-        
+
         lbNuvola4.setVisible(false);
-        
+
         lbNuvola5.setVisible(false);
         
-        //QUI METTERE LBPROVA dove partirà il gioco FALSE
-        
-        
+        lbProva.setVisible(false);
 
+        //QUI METTERE LBPROVA dove partirà il gioco FALSE
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
 
         tmrAttesa.schedule(ttkAttesa, 0, 1000);  //1000=1sec
 
     }
-    
+
     public void paint(Graphics g) {
         super.paint(g);
         Graphics2D g2d = (Graphics2D) g;
@@ -86,6 +82,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        btSalta = new javax.swing.JButton();
         lbProva = new javax.swing.JLabel();
         lbLibro = new javax.swing.JLabel();
         lbNuvola5 = new javax.swing.JLabel();
@@ -96,11 +93,27 @@ public class Provalau2 extends javax.swing.JFrame {
         lbVirgilio = new javax.swing.JLabel();
         lbDante = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
-        btContinua = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setLayout(null);
+
+        btSalta.setBackground(new java.awt.Color(255, 255, 255));
+        btSalta.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        btSalta.setForeground(new java.awt.Color(255, 255, 255));
+        btSalta.setText("SALTA");
+        btSalta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btSaltaMouseClicked(evt);
+            }
+        });
+        btSalta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btSaltaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btSalta);
+        btSalta.setBounds(300, 430, 90, 25);
 
         lbProva.setForeground(new java.awt.Color(255, 255, 51));
         lbProva.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
@@ -110,11 +123,11 @@ public class Provalau2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(lbProva);
-        lbProva.setBounds(20, 290, 250, 100);
+        lbProva.setBounds(50, 310, 250, 70);
 
-        lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov.gif")); // NOI18N
+        lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov1.gif")); // NOI18N
         jPanel2.add(lbLibro);
-        lbLibro.setBounds(0, 0, 660, 460);
+        lbLibro.setBounds(0, 0, 660, 470);
 
         lbNuvola5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\5nuvola-01.png")); // NOI18N
         jPanel2.add(lbNuvola5);
@@ -148,22 +161,6 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(lbSfondo);
         lbSfondo.setBounds(0, 0, 660, 470);
 
-        btContinua.setBackground(new java.awt.Color(255, 255, 255));
-        btContinua.setForeground(new java.awt.Color(255, 153, 0));
-        btContinua.setText("CONTINUA");
-        btContinua.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btContinuaMouseClicked(evt);
-            }
-        });
-        btContinua.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btContinuaActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btContinua);
-        btContinua.setBounds(300, 430, 90, 21);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -178,30 +175,28 @@ public class Provalau2 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btContinuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btContinuaActionPerformed
+    private void btSaltaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSaltaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btContinuaActionPerformed
+    }//GEN-LAST:event_btSaltaActionPerformed
 
-    private void btContinuaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btContinuaMouseClicked
+    private void btSaltaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSaltaMouseClicked
         // TODO add your handling code here:
 
-        ImageIcon A = new ImageIcon("media/Nuvolabase.png");
+        Esame2022.finGioco.setVisible(true);
 
-        Image B = A.getImage().getScaledInstance(lbSfondo.getWidth(), lbSfondo.getHeight(), java.awt.Image.SCALE_DEFAULT);
-
-        lbSfondo.setIcon(new ImageIcon(B));
+        Esame2022.finIniziale.setVisible(false);  // nasconde sè stessa    
 
 // TODO add your handling code here:
 
-    }//GEN-LAST:event_btContinuaMouseClicked
+    }//GEN-LAST:event_btSaltaMouseClicked
 
     private void lbProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaMouseClicked
         // TODO add your handling code here:
-        
-        Esame2022.finGioco.setVisible ( true );
-        
-        Esame2022.finIniziale.setVisible( false );  // nasconde sè stessa
-        
+
+        Esame2022.finGioco.setVisible(true);
+
+        Esame2022.finIniziale.setVisible(false);  // nasconde sè stessa
+
     }//GEN-LAST:event_lbProvaMouseClicked
 
     /**
@@ -241,7 +236,7 @@ public class Provalau2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btContinua;
+    private javax.swing.JButton btSalta;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbDante;
     private javax.swing.JLabel lbLibro;
@@ -267,90 +262,84 @@ public class Provalau2 extends javax.swing.JFrame {
 
             contatore = contatore + 1;
 
-            if (contatore == 6 ) {
-               // contatore = 0; 
+            if (contatore == 6) {
+                // contatore = 0; 
 
                 lbNuvola1.setVisible(true);
-              
+
             } // endif contatore
-            
-            
-            if (contatore == 8 ) {
-               // contatore = 0; 
+
+            if (contatore == 8) {
+                // contatore = 0; 
 
                 lbNuvola2.setVisible(true);
-            
+
             } // endif contatore
-            
-            
+
             if (contatore == 9) {
 
-                lbNuvola1.setVisible (false);
+                lbNuvola1.setVisible(false);
 
             } // endif contatore 10
-            
-           
-            
+
             if (contatore == 11) {
 
-                lbNuvola2.setVisible (false);
+                lbNuvola2.setVisible(false);
 
             } // endif contatore 10
-            
-            
-            
-            if (contatore == 13 ) {
-               // contatore = 0; 
+
+            if (contatore == 13) {
+                // contatore = 0; 
 
                 lbNuvola3.setVisible(true);
-            
-            } // endif contatore 10
-            
-            
-             if (contatore == 25) {
-
-                lbNuvola3.setVisible (false);
 
             } // endif contatore 10
-            
-             
-             
-            if (contatore == 26 ) {
-               // contatore = 0; 
+
+            if (contatore == 25) {
+
+                lbNuvola3.setVisible(false);
+
+            } // endif contatore 10
+
+            if (contatore == 26) {
+                // contatore = 0; 
 
                 lbNuvola4.setVisible(true);
-            
+
             } // endif contatore 10
-            
-            
+
             if (contatore == 38) {
 
-                lbNuvola4.setVisible (false);
+                lbNuvola4.setVisible(false);
 
             } // endif contatore 10
-            
-            
-            
-            if (contatore == 41 ) {
-               // contatore = 0; 
+
+            if (contatore == 41) {
+                // contatore = 0; 
 
                 lbNuvola5.setVisible(true);
-            
+
             } // endif contatore 10
-            
-            
+
             if (contatore == 50) {
 
-                lbNuvola5.setVisible (false);
+                lbNuvola5.setVisible(false);
+
+            } // endif contatore 10
+
+            
+            
+            if (contatore == 62) {
+
+                lbProva.setVisible(true);
 
             } // endif contatore 10
             
             
             
-            
-            
-            if (contatore > 10000) { contatore = 0; }
-            
+            if (contatore > 10000) {
+                contatore = 0;
+            }
 
         } // endof run 
 

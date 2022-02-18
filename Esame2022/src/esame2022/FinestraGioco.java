@@ -9,7 +9,7 @@ package esame2022;
  * @author lauma
  */
 public class FinestraGioco extends javax.swing.JFrame {
-
+ 
     /**
      * Creates new form FinestraGioco
      */
@@ -27,11 +27,28 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lbProvaogg = new javax.swing.JLabel();
+        lbProvaoggNOME = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+
+        lbProvaogg.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
+        lbProvaogg.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbProvaoggMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbProvaogg);
+        lbProvaogg.setBounds(10, 10, 360, 180);
+
+        lbProvaoggNOME.setForeground(new java.awt.Color(255, 255, 0));
+        lbProvaoggNOME.setText("SPADA");
+        lbProvaoggNOME.setToolTipText("");
+        jPanel1.add(lbProvaoggNOME);
+        lbProvaoggNOME.setBounds(480, 370, 31, 30);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoinf.jpg")); // NOI18N
@@ -42,15 +59,25 @@ public class FinestraGioco extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 471, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lbProvaoggMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaoggMouseClicked
+        // TODO add your handling code here:
+        
+        this.lbProvaoggNOME.setVisible(false);
+        this.lbProvaogg.setVisible(false);
+        
+        
+        
+    }//GEN-LAST:event_lbProvaoggMouseClicked
 
     /**
      * @param args the command line arguments
@@ -90,5 +117,7 @@ public class FinestraGioco extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lbProvaogg;
+    private javax.swing.JLabel lbProvaoggNOME;
     // End of variables declaration//GEN-END:variables
 }
