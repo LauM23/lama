@@ -35,15 +35,20 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lbTimer = new javax.swing.JLabel();
         lbProvaogg = new javax.swing.JLabel();
         btTimer = new javax.swing.JButton();
-        lbTimer = new javax.swing.JLabel();
         lbProvaoggNOME = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(null);
+
+        lbTimer.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(lbTimer);
+        lbTimer.setBounds(180, 0, 300, 60);
 
         lbProvaogg.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
         lbProvaogg.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -62,14 +67,12 @@ public class FinestraGioco extends javax.swing.JFrame {
         });
         jPanel1.add(btTimer);
         btTimer.setBounds(280, 290, 90, 30);
-        jPanel1.add(lbTimer);
-        lbTimer.setBounds(180, 0, 300, 80);
 
         lbProvaoggNOME.setForeground(new java.awt.Color(255, 255, 0));
         lbProvaoggNOME.setText("SPADA");
         lbProvaoggNOME.setToolTipText("");
         jPanel1.add(lbProvaoggNOME);
-        lbProvaoggNOME.setBounds(480, 370, 31, 30);
+        lbProvaoggNOME.setBounds(480, 370, 50, 30);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoinf.jpg")); // NOI18N
@@ -189,7 +192,7 @@ public class FinestraGioco extends javax.swing.JFrame {
             } // endif contatore   
 
             // lbTimer.setText("Rimangono " + contatore + " secondi"); 
-            lbTimer.setText ("Trovati" + numerotrovati + " Rimangono " + contatore + " secondi");  
+            lbTimer.setText ("Trovati " + numerotrovati + "/8" + " Rimangono " + contatore + " secondi");  
 
             if (numerotrovati == 8) {
 

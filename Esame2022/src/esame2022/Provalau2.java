@@ -98,10 +98,11 @@ public class Provalau2 extends javax.swing.JFrame {
 
         jPanel2.setLayout(null);
 
-        btSalta.setBackground(new java.awt.Color(255, 255, 255));
+        btSalta.setBackground(new java.awt.Color(170, 130, 130));
         btSalta.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
         btSalta.setForeground(new java.awt.Color(255, 255, 255));
         btSalta.setText("SALTA");
+        btSalta.setBorderPainted(false);
         btSalta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btSaltaMouseClicked(evt);
@@ -113,7 +114,7 @@ public class Provalau2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btSalta);
-        btSalta.setBounds(300, 430, 90, 25);
+        btSalta.setBounds(285, 430, 90, 25);
 
         lbProva.setForeground(new java.awt.Color(255, 255, 51));
         lbProva.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
