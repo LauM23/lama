@@ -36,8 +36,10 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lbTimer = new javax.swing.JLabel();
+        lbProvaogg2 = new javax.swing.JLabel();
         lbProvaogg = new javax.swing.JLabel();
         btTimer = new javax.swing.JButton();
+        lbProvaoggNOME2 = new javax.swing.JLabel();
         lbProvaoggNOME = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -49,6 +51,15 @@ public class FinestraGioco extends javax.swing.JFrame {
         lbTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(lbTimer);
         lbTimer.setBounds(180, 0, 300, 60);
+
+        lbProvaogg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\pulsante.png")); // NOI18N
+        lbProvaogg2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbProvaogg2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbProvaogg2);
+        lbProvaogg2.setBounds(270, 30, 380, 430);
 
         lbProvaogg.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
         lbProvaogg.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -67,6 +78,11 @@ public class FinestraGioco extends javax.swing.JFrame {
         });
         jPanel1.add(btTimer);
         btTimer.setBounds(280, 290, 90, 30);
+
+        lbProvaoggNOME2.setForeground(new java.awt.Color(255, 0, 0));
+        lbProvaoggNOME2.setText("NOME2");
+        jPanel1.add(lbProvaoggNOME2);
+        lbProvaoggNOME2.setBounds(450, 140, 120, 40);
 
         lbProvaoggNOME.setForeground(new java.awt.Color(255, 255, 0));
         lbProvaoggNOME.setText("SPADA");
@@ -126,6 +142,15 @@ public class FinestraGioco extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btTimerActionPerformed
 
+    private void lbProvaogg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaogg2MouseClicked
+        // TODO add your handling code here:
+        
+        numerotrovati = numerotrovati + 1;
+        this.lbProvaoggNOME2.setVisible(false);
+        this.lbProvaogg2.setVisible(false);
+        
+    }//GEN-LAST:event_lbProvaogg2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -166,7 +191,9 @@ public class FinestraGioco extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbProvaogg;
+    private javax.swing.JLabel lbProvaogg2;
     private javax.swing.JLabel lbProvaoggNOME;
+    private javax.swing.JLabel lbProvaoggNOME2;
     private javax.swing.JLabel lbTimer;
     // End of variables declaration//GEN-END:variables
 
