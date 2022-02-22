@@ -10,25 +10,26 @@ package esame2022;
  */
 public class Esame2022 {
 
-    public static Provalau2        finIniziale;
-    public static FinestraGioco    finGioco;
+    public static Provalau2 finIniziale;
+    public static FinestraGioco finGioco;
+    public static FinestraAudio FA;
+
     
-
-
-
-
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        finIniziale = new Provalau2  ();
+
+        finIniziale = new Provalau2();
         finIniziale.setLocation(0, 0);
         finIniziale.setVisible(true);
-        
-        finGioco = new FinestraGioco ();
-        finGioco.setLocation (25,25);
+
+        finGioco = new FinestraGioco();
+        finGioco.setLocation(25, 25);
         finGioco.setVisible(false);
-        
+
+        FA = new FinestraAudio();
+        FA.setLocation(0, 0);
+        FA.setVisible(false);
 
     }
-    
+
 }

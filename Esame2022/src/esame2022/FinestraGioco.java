@@ -138,8 +138,8 @@ public class FinestraGioco extends javax.swing.JFrame {
         mttContoRovescia = new ContoRovescia();
         tmrContoRovescia = new java.util.Timer();
         tmrContoRovescia.schedule(mttContoRovescia, 0, 1000);
-
         
+
     }//GEN-LAST:event_btTimerActionPerformed
 
     private void lbProvaogg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaogg2MouseClicked
@@ -219,7 +219,7 @@ public class FinestraGioco extends javax.swing.JFrame {
             } // endif contatore   
 
             // lbTimer.setText("Rimangono " + contatore + " secondi"); 
-            lbTimer.setText ("Trovati " + numerotrovati + "/8" + " Rimangono " + contatore + " secondi");  
+            lbTimer.setText ("Trovati " + numerotrovati + "/8" + " Rimangono " + contatore + " sec");  
 
             if (numerotrovati == 8) {
 

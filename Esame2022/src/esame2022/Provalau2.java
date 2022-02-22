@@ -58,6 +58,8 @@ public class Provalau2 extends javax.swing.JFrame {
         
         lbProva.setVisible(false);
 
+        
+        
         //QUI METTERE LBPROVA dove partirà il gioco FALSE
         ttkAttesa = new MiaAttesa();
         tmrAttesa = new java.util.Timer();
@@ -199,6 +201,9 @@ public class Provalau2 extends javax.swing.JFrame {
 
         Esame2022.finGioco.setVisible(true);
 
+        Esame2022.finGioco.btTimer.setVisible(false);
+        Esame2022.finGioco.btTimer.doClick();
+        
         Esame2022.finIniziale.setVisible(false);  // nasconde sè stessa
 
     }//GEN-LAST:event_lbProvaMouseClicked

@@ -4,26 +4,26 @@
  */
 package esame2022;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.RenderingHints;
-import javax.swing.ImageIcon;
+import javax.sound.sampled.Clip;
 
 /**
  *
  * @author lauma
  */
-public class Provalau1 extends javax.swing.JFrame {
+public class FinestraAudio extends javax.swing.JFrame {
 
+    public MiaClipAudio  MC1 ;
+    public MiaClipAudio  MC2 ;
+    
+    
     /**
-     * Creates new form Provalau
+     * Creates new form FinestraAudio
      */
-
-    public void paint(Graphics g) {
-        super.paint(g);
-        Graphics2D g2d = (Graphics2D) g;
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+    public FinestraAudio() {
+        initComponents();
+        
+        //MC1 = new MiaClipAudio ("media/audio1.wav");
+        
     }
 
     /**
@@ -35,35 +35,59 @@ public class Provalau1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        lbGif = new javax.swing.JLabel();
-        lbSfondo = new javax.swing.JLabel();
+        lbAudio = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setLayout(null);
-
-        lbGif.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov5.gif")); // NOI18N
-        jPanel2.add(lbGif);
-        lbGif.setBounds(0, 0, 660, 472);
-
-        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoanimepic.jpg")); // NOI18N
-        jPanel2.add(lbSfondo);
-        lbSfondo.setBounds(0, 0, 660, 470);
+        lbAudio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lbAudioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lbAudioMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lbAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lbAudio, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lbAudioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbAudioMouseEntered
+        // TODO add your handling code here:
+        
+        MC1 = new MiaClipAudio ("OneDrive/Documenti/GitHub/Lama/Esame2022/media/button-09a.mp3");
+        
+        MC1.loop  (  Clip.LOOP_CONTINUOUSLY  );
+        
+        MC2 = new MiaClipAudio ("media/audio2.wav");
+        
+        MC2.loop  (  Clip.LOOP_CONTINUOUSLY  );
+        
+    }//GEN-LAST:event_lbAudioMouseEntered
+
+    
+    private void lbAudioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbAudioMouseExited
+        // TODO add your handling code here:
+        
+        MC1.stop();
+        
+        MC2.stop();
+        
+    }//GEN-LAST:event_lbAudioMouseExited
 
     /**
      * @param args the command line arguments
@@ -82,28 +106,27 @@ public class Provalau1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FinestraAudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FinestraAudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FinestraAudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Provalau1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FinestraAudio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
-
+        
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Provalau1().setVisible(true);
+                new FinestraAudio().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JLabel lbGif;
-    private javax.swing.JLabel lbSfondo;
+    private javax.swing.JLabel lbAudio;
     // End of variables declaration//GEN-END:variables
 }
