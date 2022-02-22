@@ -22,7 +22,7 @@ public class FinestraAudio extends javax.swing.JFrame {
     public FinestraAudio() {
         initComponents();
         
-        MC1 = new MiaClipAudio ("download/button-09a.wav");
+        MC1 = new MiaClipAudio ("media/Crypt_of_Insomnia_-_Unknown_Flying_Objects.wav");
         
         MC1.loop  (  Clip.LOOP_CONTINUOUSLY  );
         
@@ -72,25 +72,11 @@ public class FinestraAudio extends javax.swing.JFrame {
 
     private void lbAudioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbAudioMouseEntered
         // TODO add your handling code here:
-        
-        MC1 = new MiaClipAudio ("OneDrive/Documenti/GitHub/Lama/Esame2022/media/button-09a.mp3");
-        
-        MC1.loop  (  Clip.LOOP_CONTINUOUSLY  );
-        
-        MC2 = new MiaClipAudio ("media/audio2.wav");
-        
-        MC2.loop  (  Clip.LOOP_CONTINUOUSLY  );
-        
     }//GEN-LAST:event_lbAudioMouseEntered
 
     
     private void lbAudioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbAudioMouseExited
-        // TODO add your handling code here:
-        
-        MC1.stop();
-        
-        MC2.stop();
-        
+        // TODO add your handling code here:        
     }//GEN-LAST:event_lbAudioMouseExited
 
     /**
