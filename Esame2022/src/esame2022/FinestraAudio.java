@@ -22,6 +22,10 @@ public class FinestraAudio extends javax.swing.JFrame {
     public FinestraAudio() {
         initComponents();
         
+        MC1 = new MiaClipAudio ("download/button-09a.wav");
+        
+        MC1.loop  (  Clip.LOOP_CONTINUOUSLY  );
+        
         //MC1 = new MiaClipAudio ("media/audio1.wav");
         
     }
@@ -116,7 +120,7 @@ public class FinestraAudio extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        
+       
         
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
