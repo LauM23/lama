@@ -24,6 +24,8 @@ public class Provalau2 extends javax.swing.JFrame {
      * Creates new form Provalau
      */
     public Provalau2() {
+        
+        setUndecorated (true);
         initComponents();
 
         ImageIcon A = new ImageIcon("media/1nuvola-01.png");
@@ -97,6 +99,7 @@ public class Provalau2 extends javax.swing.JFrame {
         lbSfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel2.setLayout(null);
 

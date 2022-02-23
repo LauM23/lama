@@ -15,14 +15,18 @@ public class FinestraGioco extends javax.swing.JFrame {
     ContoRovescia mttContoRovescia;
     java.util.Timer tmrContoRovescia;
     int numerotrovati = 0;
-    
+
     public MiaClipAudio MC2;
 
     /**
      * Creates new form FinestraGioco
      */
     public FinestraGioco() {
+
+        setUndecorated(true);
         initComponents();
+
+        lbHaivinto.setVisible(false);
     }
 
     /**
@@ -35,40 +39,118 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        lbHaivinto = new javax.swing.JLabel();
         lbTimer = new javax.swing.JLabel();
-        lbProvaogg2 = new javax.swing.JLabel();
-        lbProvaogg = new javax.swing.JLabel();
+        lbTrovati = new javax.swing.JLabel();
+        lbOgg8 = new javax.swing.JLabel();
+        lbOgg7 = new javax.swing.JLabel();
+        lbOgg6 = new javax.swing.JLabel();
+        lbOgg5 = new javax.swing.JLabel();
+        lbOgg4 = new javax.swing.JLabel();
+        lbOgg3 = new javax.swing.JLabel();
+        lbOgg2 = new javax.swing.JLabel();
+        lbOgg1 = new javax.swing.JLabel();
         btTimer = new javax.swing.JButton();
-        lbProvaoggNOME2 = new javax.swing.JLabel();
-        lbProvaoggNOME = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lbNOgg2 = new javax.swing.JLabel();
+        lbNOgg1 = new javax.swing.JLabel();
+        lbSfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setLayout(null);
 
-        lbTimer.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbHaivinto.setFont(new java.awt.Font("Perpetua", 1, 60)); // NOI18N
+        lbHaivinto.setForeground(new java.awt.Color(255, 255, 255));
+        lbHaivinto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbHaivinto.setText("HAI VINTO!");
+        jPanel1.add(lbHaivinto);
+        lbHaivinto.setBounds(0, 0, 660, 470);
+
+        lbTimer.setFont(new java.awt.Font("Perpetua", 1, 24)); // NOI18N
+        lbTimer.setForeground(new java.awt.Color(178, 123, 142));
         lbTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel1.add(lbTimer);
-        lbTimer.setBounds(180, 0, 300, 60);
+        lbTimer.setBounds(270, 20, 120, 30);
 
-        lbProvaogg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\pulsante.png")); // NOI18N
-        lbProvaogg2.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbTrovati.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbTrovati.setForeground(new java.awt.Color(255, 255, 255));
+        lbTrovati.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(lbTrovati);
+        lbTrovati.setBounds(270, 0, 120, 20);
+
+        lbOgg8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\colomba-1.jpg")); // NOI18N
+        lbOgg8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbProvaogg2MouseClicked(evt);
+                lbOgg8MouseClicked(evt);
             }
         });
-        jPanel1.add(lbProvaogg2);
-        lbProvaogg2.setBounds(270, 30, 380, 430);
+        jPanel1.add(lbOgg8);
+        lbOgg8.setBounds(240, 90, 90, 40);
 
-        lbProvaogg.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
-        lbProvaogg.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbOgg7.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\leggio.jpg")); // NOI18N
+        lbOgg7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbProvaoggMouseClicked(evt);
+                lbOgg7MouseClicked(evt);
             }
         });
-        jPanel1.add(lbProvaogg);
-        lbProvaogg.setBounds(10, 40, 360, 180);
+        jPanel1.add(lbOgg7);
+        lbOgg7.setBounds(150, 190, 220, 50);
+
+        lbOgg6.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\torcereD.jpg")); // NOI18N
+        lbOgg6.setText("jLabel1");
+        lbOgg6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg6MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg6);
+        lbOgg6.setBounds(150, 300, 70, 60);
+
+        lbOgg5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\pergamena1.jpg")); // NOI18N
+        lbOgg5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg5);
+        lbOgg5.setBounds(90, 40, 70, 90);
+
+        lbOgg4.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libroo.png")); // NOI18N
+        lbOgg4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg4);
+        lbOgg4.setBounds(410, 70, 200, 50);
+
+        lbOgg3.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\2nuvola-01.png")); // NOI18N
+        lbOgg3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg3);
+        lbOgg3.setBounds(-210, 280, 290, 110);
+
+        lbOgg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\4nuvola-01.png")); // NOI18N
+        lbOgg2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg2);
+        lbOgg2.setBounds(430, 210, 200, 240);
+
+        lbOgg1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
+        lbOgg1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbOgg1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbOgg1);
+        lbOgg1.setBounds(-140, 30, 190, 180);
 
         btTimer.setText("START");
         btTimer.addActionListener(new java.awt.event.ActionListener() {
@@ -79,26 +161,26 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(btTimer);
         btTimer.setBounds(280, 290, 90, 30);
 
-        lbProvaoggNOME2.setForeground(new java.awt.Color(255, 0, 0));
-        lbProvaoggNOME2.setText("NOME2");
-        jPanel1.add(lbProvaoggNOME2);
-        lbProvaoggNOME2.setBounds(450, 140, 120, 40);
+        lbNOgg2.setForeground(new java.awt.Color(255, 0, 0));
+        lbNOgg2.setText("NOME2");
+        jPanel1.add(lbNOgg2);
+        lbNOgg2.setBounds(70, 400, 120, 40);
 
-        lbProvaoggNOME.setForeground(new java.awt.Color(255, 255, 0));
-        lbProvaoggNOME.setText("SPADA");
-        lbProvaoggNOME.setToolTipText("");
-        jPanel1.add(lbProvaoggNOME);
-        lbProvaoggNOME.setBounds(480, 370, 50, 30);
+        lbNOgg1.setForeground(new java.awt.Color(255, 255, 0));
+        lbNOgg1.setText("SPADA");
+        lbNOgg1.setToolTipText("");
+        jPanel1.add(lbNOgg1);
+        lbNOgg1.setBounds(240, 400, 50, 30);
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 0));
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoinf.jpg")); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbSfondo.setBackground(new java.awt.Color(255, 255, 0));
+        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\Sfondo gioco.jpg")); // NOI18N
+        lbSfondo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel1MouseEntered(evt);
+                lbSfondoMouseEntered(evt);
             }
         });
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 660, 470);
+        jPanel1.add(lbSfondo);
+        lbSfondo.setBounds(0, 0, 660, 470);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -114,44 +196,118 @@ public class FinestraGioco extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void lbProvaoggMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaoggMouseClicked
+    private void lbOgg1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg1MouseClicked
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        this.lbProvaoggNOME.setVisible(false);
-        this.lbProvaogg.setVisible(false);
-        
-        MC2 = new MiaClipAudio ("media/button-09a.wav");
+        this.lbNOgg1.setVisible(false);
+        this.lbOgg1.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
 
 
-    }//GEN-LAST:event_lbProvaoggMouseClicked
+    }//GEN-LAST:event_lbOgg1MouseClicked
 
-    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+    private void lbSfondoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbSfondoMouseEntered
         // TODO add your handling code here:
 
-        
-    }//GEN-LAST:event_jLabel1MouseEntered
+
+    }//GEN-LAST:event_lbSfondoMouseEntered
 
     private void btTimerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTimerActionPerformed
         // TODO add your handling code here:
-        
+
         mttContoRovescia = new ContoRovescia();
         tmrContoRovescia = new java.util.Timer();
         tmrContoRovescia.schedule(mttContoRovescia, 0, 1000);
-        
+
 
     }//GEN-LAST:event_btTimerActionPerformed
 
-    private void lbProvaogg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaogg2MouseClicked
+    private void lbOgg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg2MouseClicked
         // TODO add your handling code here:
-        
+
         numerotrovati = numerotrovati + 1;
-        this.lbProvaoggNOME2.setVisible(false);
-        this.lbProvaogg2.setVisible(false);
-        
-        MC2 = new MiaClipAudio ("media/button-09a.wav");
-        
-    }//GEN-LAST:event_lbProvaogg2MouseClicked
+        this.lbNOgg2.setVisible(false);
+        this.lbOgg2.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg2MouseClicked
+
+    private void lbOgg3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg3MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg3.setVisible(false);
+        this.lbOgg3.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg3MouseClicked
+
+    private void lbOgg4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg4MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg4.setVisible(false);
+        this.lbOgg4.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg4MouseClicked
+
+    private void lbOgg5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg5MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg5.setVisible(false);
+        this.lbOgg5.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg5MouseClicked
+
+    private void lbOgg6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg6MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg6.setVisible(false);
+        this.lbOgg6.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg6MouseClicked
+
+    private void lbOgg7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg7MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg7.setVisible(false);
+        this.lbOgg7.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg7MouseClicked
+
+    private void lbOgg8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg8MouseClicked
+        // TODO add your handling code here:
+
+        numerotrovati = numerotrovati + 1;
+        //this.lbNOgg8.setVisible(false);
+        this.lbOgg8.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2.start();
+
+    }//GEN-LAST:event_lbOgg8MouseClicked
 
     /**
      * @param args the command line arguments
@@ -190,13 +346,21 @@ public class FinestraGioco extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btTimer;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lbProvaogg;
-    private javax.swing.JLabel lbProvaogg2;
-    private javax.swing.JLabel lbProvaoggNOME;
-    private javax.swing.JLabel lbProvaoggNOME2;
+    private javax.swing.JLabel lbHaivinto;
+    private javax.swing.JLabel lbNOgg1;
+    private javax.swing.JLabel lbNOgg2;
+    private javax.swing.JLabel lbOgg1;
+    private javax.swing.JLabel lbOgg2;
+    private javax.swing.JLabel lbOgg3;
+    private javax.swing.JLabel lbOgg4;
+    private javax.swing.JLabel lbOgg5;
+    private javax.swing.JLabel lbOgg6;
+    private javax.swing.JLabel lbOgg7;
+    private javax.swing.JLabel lbOgg8;
+    private javax.swing.JLabel lbSfondo;
     private javax.swing.JLabel lbTimer;
+    private javax.swing.JLabel lbTrovati;
     // End of variables declaration//GEN-END:variables
 
     class ContoRovescia extends TimerTask {
@@ -216,14 +380,35 @@ public class FinestraGioco extends javax.swing.JFrame {
 
                 if (numerotrovati < 8) {
                     numerotrovati = 0;
+                    
+                    lbOgg1.setVisible(true);
+                    lbOgg2.setVisible(true);
+                    lbOgg3.setVisible(true);
+                    lbOgg4.setVisible(true);
+                    lbOgg5.setVisible(true);
+                    lbOgg6.setVisible(true);
+                    lbOgg7.setVisible(true);
+                    lbOgg8.setVisible(true);
+                    
+                    
                 }
 
             } // endif contatore   
 
             // lbTimer.setText("Rimangono " + contatore + " secondi"); 
-            lbTimer.setText ("Trovati " + numerotrovati + "/8" + " Rimangono " + contatore + " sec");  
+            lbTimer.setText(contatore + " SEC");
+
+            lbTrovati.setText("TROVATI " + numerotrovati + "/8");
 
             if (numerotrovati == 8) {
+
+                lbHaivinto.setVisible(true);
+
+                try {
+                    cancel();
+                } catch (Exception e) {
+                    System.out.println(e.toString());
+                }
 
                 // finestravittoria
             }

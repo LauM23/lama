@@ -22,7 +22,7 @@ public class FinestraAudio extends javax.swing.JFrame {
     public FinestraAudio() {
         initComponents();
         
-        MC1 = new MiaClipAudio ("media/Crypt_of_Insomnia_-_Unknown_Flying_Objects.wav");
+        MC1 = new MiaClipAudio ("audio/Crypt_of_Insomnia_-_Unknown_Flying_Objects.wav");
         
         MC1.loop  (  Clip.LOOP_CONTINUOUSLY  );
         
