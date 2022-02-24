@@ -27,6 +27,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         initComponents();
 
         lbHaivinto.setVisible(false);
+        btRestart.setVisible(false);
     }
 
     /**
@@ -39,6 +40,7 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        btRestart = new javax.swing.JButton();
         lbHaivinto = new javax.swing.JLabel();
         lbTimer = new javax.swing.JLabel();
         lbTrovati = new javax.swing.JLabel();
@@ -59,6 +61,16 @@ public class FinestraGioco extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setLayout(null);
+
+        btRestart.setFont(new java.awt.Font("Perpetua", 1, 24)); // NOI18N
+        btRestart.setText("RESTART");
+        btRestart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btRestartMouseClicked(evt);
+            }
+        });
+        jPanel1.add(btRestart);
+        btRestart.setBounds(260, 210, 140, 50);
 
         lbHaivinto.setFont(new java.awt.Font("Perpetua", 1, 60)); // NOI18N
         lbHaivinto.setForeground(new java.awt.Color(255, 255, 255));
@@ -309,6 +321,22 @@ public class FinestraGioco extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lbOgg8MouseClicked
 
+    private void btRestartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btRestartMouseClicked
+        // TODO add your handling code here:
+
+        //lbOgg1.setVisible(true);
+        //lbOgg2.setVisible(true);
+        //lbOgg3.setVisible(true);
+        //lbOgg4.setVisible(true);
+        //lbOgg5.setVisible(true);
+        //lbOgg6.setVisible(true);
+        //lbOgg7.setVisible(true);
+        //lbOgg8.setVisible(true);
+
+        btRestart.setVisible(false);
+
+    }//GEN-LAST:event_btRestartMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -345,6 +373,7 @@ public class FinestraGioco extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btRestart;
     public javax.swing.JButton btTimer;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbHaivinto;
@@ -368,7 +397,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         long contatore;
 
         public ContoRovescia() {
-            contatore = 180; //3min
+            contatore = 60; //180=3min
         } // endof costruttore
 
         public void run() {
@@ -376,11 +405,17 @@ public class FinestraGioco extends javax.swing.JFrame {
             contatore = contatore - 1;
 
             if (contatore <= 0) { //qui finito tempo
-                contatore = 180;
+                contatore = 60;
+
+                //try {
+                //   cancel();
+                //} catch (Exception e) {
+                //   System.out.println(e.toString());
+                //}
 
                 if (numerotrovati < 8) {
                     numerotrovati = 0;
-                    
+
                     lbOgg1.setVisible(true);
                     lbOgg2.setVisible(true);
                     lbOgg3.setVisible(true);
@@ -389,8 +424,9 @@ public class FinestraGioco extends javax.swing.JFrame {
                     lbOgg6.setVisible(true);
                     lbOgg7.setVisible(true);
                     lbOgg8.setVisible(true);
-                    
-                    
+
+                    btRestart.setVisible(true);
+
                 }
 
             } // endif contatore   
