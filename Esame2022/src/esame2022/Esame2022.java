@@ -19,11 +19,11 @@ public class Esame2022 {
         // TODO code application logic here
 
         finIniziale = new Provalau2();
-        finIniziale.setLocation(0, 0);
+        finIniziale.setLocation(438, 180);
         finIniziale.setVisible(true);
 
         finGioco = new FinestraGioco();
-        finGioco.setLocation(25, 25);
+        finGioco.setLocation(438, 180);
         finGioco.setVisible(false);
 
         FA = new FinestraAudio();
