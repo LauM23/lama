@@ -13,6 +13,7 @@ public class Esame2022 {
     public static Provalau2 finIniziale;
     public static FinestraGioco finGioco;
     public static FinestraAudio FA;
+    
 
     
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Esame2022 {
         finGioco = new FinestraGioco();
         finGioco.setLocation(438, 180);
         finGioco.setVisible(false);
-
+        
         FA = new FinestraAudio();
         FA.setLocation(0, 0);
         FA.setVisible(false);

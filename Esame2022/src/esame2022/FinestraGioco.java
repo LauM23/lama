@@ -28,6 +28,7 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         lbHaivinto.setVisible(false);
         btRestart.setVisible(false);
+
     }
 
     /**
@@ -41,6 +42,14 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         btRestart = new javax.swing.JButton();
+        lbNOgg8 = new javax.swing.JLabel();
+        lbNOgg7 = new javax.swing.JLabel();
+        lbNOgg6 = new javax.swing.JLabel();
+        lbNOgg5 = new javax.swing.JLabel();
+        lbNOgg4 = new javax.swing.JLabel();
+        lbNOgg3 = new javax.swing.JLabel();
+        lbNOgg2 = new javax.swing.JLabel();
+        lbNOgg1 = new javax.swing.JLabel();
         lbHaivinto = new javax.swing.JLabel();
         lbTimer = new javax.swing.JLabel();
         lbTrovati = new javax.swing.JLabel();
@@ -53,8 +62,6 @@ public class FinestraGioco extends javax.swing.JFrame {
         lbOgg2 = new javax.swing.JLabel();
         lbOgg1 = new javax.swing.JLabel();
         btTimer = new javax.swing.JButton();
-        lbNOgg2 = new javax.swing.JLabel();
-        lbNOgg1 = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,15 +69,80 @@ public class FinestraGioco extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        btRestart.setBackground(new java.awt.Color(170, 130, 130));
         btRestart.setFont(new java.awt.Font("Perpetua", 1, 24)); // NOI18N
-        btRestart.setText("RESTART");
+        btRestart.setForeground(new java.awt.Color(255, 255, 255));
+        btRestart.setText("RIPROVA");
+        btRestart.setBorderPainted(false);
         btRestart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btRestartMouseClicked(evt);
             }
         });
+        btRestart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRestartActionPerformed(evt);
+            }
+        });
         jPanel1.add(btRestart);
         btRestart.setBounds(260, 210, 140, 50);
+
+        lbNOgg8.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg8.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg8.setText("TORCERE");
+        jPanel1.add(lbNOgg8);
+        lbNOgg8.setBounds(480, 440, 120, 17);
+
+        lbNOgg7.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg7.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg7.setText("SPADA");
+        jPanel1.add(lbNOgg7);
+        lbNOgg7.setBounds(340, 440, 120, 17);
+
+        lbNOgg6.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg6.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg6.setText("QUADRO");
+        jPanel1.add(lbNOgg6);
+        lbNOgg6.setBounds(200, 440, 120, 17);
+
+        lbNOgg5.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg5.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg5.setText("MANTELLO");
+        jPanel1.add(lbNOgg5);
+        lbNOgg5.setBounds(60, 440, 120, 17);
+
+        lbNOgg4.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg4.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg4.setText("LIBRO");
+        jPanel1.add(lbNOgg4);
+        lbNOgg4.setBounds(480, 400, 125, 30);
+
+        lbNOgg3.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg3.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg3.setText("CONTRATTO");
+        jPanel1.add(lbNOgg3);
+        lbNOgg3.setBounds(340, 400, 125, 30);
+
+        lbNOgg2.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg2.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg2.setText("COLOMBE");
+        jPanel1.add(lbNOgg2);
+        lbNOgg2.setBounds(200, 400, 123, 30);
+
+        lbNOgg1.setFont(new java.awt.Font("Perpetua", 1, 14)); // NOI18N
+        lbNOgg1.setForeground(new java.awt.Color(255, 255, 255));
+        lbNOgg1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbNOgg1.setText("BOTOLA");
+        lbNOgg1.setToolTipText("");
+        jPanel1.add(lbNOgg1);
+        lbNOgg1.setBounds(60, 400, 120, 30);
 
         lbHaivinto.setFont(new java.awt.Font("Perpetua", 1, 60)); // NOI18N
         lbHaivinto.setForeground(new java.awt.Color(255, 255, 255));
@@ -173,17 +245,6 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(btTimer);
         btTimer.setBounds(280, 290, 90, 30);
 
-        lbNOgg2.setForeground(new java.awt.Color(255, 0, 0));
-        lbNOgg2.setText("NOME2");
-        jPanel1.add(lbNOgg2);
-        lbNOgg2.setBounds(70, 400, 120, 40);
-
-        lbNOgg1.setForeground(new java.awt.Color(255, 255, 0));
-        lbNOgg1.setText("SPADA");
-        lbNOgg1.setToolTipText("");
-        jPanel1.add(lbNOgg1);
-        lbNOgg1.setBounds(240, 400, 50, 30);
-
         lbSfondo.setBackground(new java.awt.Color(255, 255, 0));
         lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\Sfondo gioco.jpg")); // NOI18N
         lbSfondo.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -253,7 +314,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg3.setVisible(false);
+        this.lbNOgg3.setVisible(false);
         this.lbOgg3.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -265,7 +326,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg4.setVisible(false);
+        this.lbNOgg4.setVisible(false);
         this.lbOgg4.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -277,7 +338,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg5.setVisible(false);
+        this.lbNOgg5.setVisible(false);
         this.lbOgg5.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -289,7 +350,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg6.setVisible(false);
+        this.lbNOgg6.setVisible(false);
         this.lbOgg6.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -301,7 +362,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg7.setVisible(false);
+        this.lbNOgg7.setVisible(false);
         this.lbOgg7.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -313,7 +374,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         numerotrovati = numerotrovati + 1;
-        //this.lbNOgg8.setVisible(false);
+        this.lbNOgg8.setVisible(false);
         this.lbOgg8.setVisible(false);
 
         MC2 = new MiaClipAudio("audio/button-09a.wav");
@@ -324,18 +385,44 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void btRestartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btRestartMouseClicked
         // TODO add your handling code here:
 
-        //lbOgg1.setVisible(true);
-        //lbOgg2.setVisible(true);
-        //lbOgg3.setVisible(true);
-        //lbOgg4.setVisible(true);
-        //lbOgg5.setVisible(true);
-        //lbOgg6.setVisible(true);
-        //lbOgg7.setVisible(true);
-        //lbOgg8.setVisible(true);
+        try {
+
+            mttContoRovescia.cancel();
+            tmrContoRovescia.cancel();
+
+            mttContoRovescia = new ContoRovescia();
+            tmrContoRovescia = new java.util.Timer();
+            tmrContoRovescia.schedule(mttContoRovescia, 0, 1000);
+
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+
+        lbOgg1.setVisible(true);
+        lbOgg2.setVisible(true);
+        lbOgg3.setVisible(true);
+        lbOgg4.setVisible(true);
+        lbOgg5.setVisible(true);
+        lbOgg6.setVisible(true);
+        lbOgg7.setVisible(true);
+        lbOgg8.setVisible(true);
+        
+        lbNOgg1.setVisible(true);
+        lbNOgg2.setVisible(true);
+        lbNOgg3.setVisible(true);
+        lbNOgg4.setVisible(true);
+        lbNOgg5.setVisible(true);
+        lbNOgg6.setVisible(true);
+        lbNOgg7.setVisible(true);
+        lbNOgg8.setVisible(true);
 
         btRestart.setVisible(false);
 
     }//GEN-LAST:event_btRestartMouseClicked
+
+    private void btRestartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRestartActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btRestartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -379,6 +466,12 @@ public class FinestraGioco extends javax.swing.JFrame {
     private javax.swing.JLabel lbHaivinto;
     private javax.swing.JLabel lbNOgg1;
     private javax.swing.JLabel lbNOgg2;
+    private javax.swing.JLabel lbNOgg3;
+    private javax.swing.JLabel lbNOgg4;
+    private javax.swing.JLabel lbNOgg5;
+    private javax.swing.JLabel lbNOgg6;
+    private javax.swing.JLabel lbNOgg7;
+    private javax.swing.JLabel lbNOgg8;
     private javax.swing.JLabel lbOgg1;
     private javax.swing.JLabel lbOgg2;
     private javax.swing.JLabel lbOgg3;
@@ -397,7 +490,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         long contatore;
 
         public ContoRovescia() {
-            contatore = 60; //180=3min
+            contatore = 30; //180=3min
         } // endof costruttore
 
         public void run() {
@@ -405,25 +498,17 @@ public class FinestraGioco extends javax.swing.JFrame {
             contatore = contatore - 1;
 
             if (contatore <= 0) { //qui finito tempo
-                contatore = 60;
+                contatore = 30;
 
-                //try {
-                //   cancel();
-                //} catch (Exception e) {
-                //   System.out.println(e.toString());
-                //}
+                try {
+                    cancel();
+                } catch (Exception e) {
+                    System.out.println(e.toString());
+                }
 
+                
                 if (numerotrovati < 8) {
                     numerotrovati = 0;
-
-                    lbOgg1.setVisible(true);
-                    lbOgg2.setVisible(true);
-                    lbOgg3.setVisible(true);
-                    lbOgg4.setVisible(true);
-                    lbOgg5.setVisible(true);
-                    lbOgg6.setVisible(true);
-                    lbOgg7.setVisible(true);
-                    lbOgg8.setVisible(true);
 
                     btRestart.setVisible(true);
 
