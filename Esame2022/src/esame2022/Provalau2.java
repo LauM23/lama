@@ -48,6 +48,7 @@ public class Provalau2 extends javax.swing.JFrame {
         B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola5.setIcon(new ImageIcon(B));
 
+        
         lbNuvola1.setVisible(false);
 
         lbNuvola2.setVisible(false);

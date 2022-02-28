@@ -276,7 +276,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg1.setVisible(false);
         this.lbOgg1.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
 
@@ -305,7 +305,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg2.setVisible(false);
         this.lbOgg2.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg2MouseClicked
@@ -317,7 +317,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg3.setVisible(false);
         this.lbOgg3.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg3MouseClicked
@@ -329,7 +329,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg4.setVisible(false);
         this.lbOgg4.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg4MouseClicked
@@ -341,7 +341,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg5.setVisible(false);
         this.lbOgg5.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg5MouseClicked
@@ -353,7 +353,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg6.setVisible(false);
         this.lbOgg6.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg6MouseClicked
@@ -365,7 +365,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg7.setVisible(false);
         this.lbOgg7.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg7MouseClicked
@@ -377,7 +377,7 @@ public class FinestraGioco extends javax.swing.JFrame {
         this.lbNOgg8.setVisible(false);
         this.lbOgg8.setVisible(false);
 
-        MC2 = new MiaClipAudio("audio/button-09a.wav");
+        MC2 = new MiaClipAudio("audio/button.wav");
         MC2.start();
 
     }//GEN-LAST:event_lbOgg8MouseClicked
@@ -530,7 +530,7 @@ public class FinestraGioco extends javax.swing.JFrame {
                 } catch (Exception e) {
                     System.out.println(e.toString());
                 }
-
+                
                 // finestravittoria
             }
 
