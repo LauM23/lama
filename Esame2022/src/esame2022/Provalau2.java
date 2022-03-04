@@ -47,6 +47,10 @@ public class Provalau2 extends javax.swing.JFrame {
         A = new ImageIcon("media/5nuvola-01.png");
         B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola5.setIcon(new ImageIcon(B));
+        
+        A = new ImageIcon("media/notifica.png");
+        B = A.getImage().getScaledInstance(lbNotifica.getWidth(), lbNotifica.getHeight(), java.awt.Image.SCALE_DEFAULT);
+        lbNotifica.setIcon(new ImageIcon(B));
 
         
         lbNuvola1.setVisible(false);
@@ -60,6 +64,8 @@ public class Provalau2 extends javax.swing.JFrame {
         lbNuvola5.setVisible(false);
         
         lbProva.setVisible(false);
+        
+        lbNotifica.setVisible(false);
 
         
         
@@ -89,6 +95,7 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         btSalta = new javax.swing.JButton();
         lbProva = new javax.swing.JLabel();
+        lbNotifica = new javax.swing.JLabel();
         lbLibro = new javax.swing.JLabel();
         lbNuvola5 = new javax.swing.JLabel();
         lbNuvola4 = new javax.swing.JLabel();
@@ -132,6 +139,10 @@ public class Provalau2 extends javax.swing.JFrame {
         });
         jPanel2.add(lbProva);
         lbProva.setBounds(50, 310, 250, 70);
+
+        lbNotifica.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\notifica.png")); // NOI18N
+        jPanel2.add(lbNotifica);
+        lbNotifica.setBounds(0, 0, 660, 470);
 
         lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov1.gif")); // NOI18N
         jPanel2.add(lbLibro);
@@ -259,6 +270,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JLabel lbAnime;
     private javax.swing.JLabel lbDante;
     private javax.swing.JLabel lbLibro;
+    private javax.swing.JLabel lbNotifica;
     private javax.swing.JLabel lbNuvola1;
     private javax.swing.JLabel lbNuvola2;
     private javax.swing.JLabel lbNuvola3;
@@ -288,31 +300,35 @@ public class Provalau2 extends javax.swing.JFrame {
 
             } // endif contatore
 
+            
             if (contatore == 8) {
                 // contatore = 0; 
 
                 lbNuvola2.setVisible(true);
 
             } // endif contatore
+            
 
             if (contatore == 9) {
 
                 lbNuvola1.setVisible(false);
 
             } // endif contatore 10
+            
 
             if (contatore == 11) {
 
                 lbNuvola2.setVisible(false);
 
             } // endif contatore 10
+            
 
             if (contatore == 13) {
-                // contatore = 0; 
 
                 lbNuvola3.setVisible(true);
 
             } // endif contatore 10
+            
 
             if (contatore == 25) {
 
@@ -320,21 +336,22 @@ public class Provalau2 extends javax.swing.JFrame {
 
             } // endif contatore 10
 
+            
             if (contatore == 26) {
-                // contatore = 0; 
 
                 lbNuvola4.setVisible(true);
 
             } // endif contatore 10
 
+            
             if (contatore == 38) {
 
                 lbNuvola4.setVisible(false);
 
             } // endif contatore 10
 
+            
             if (contatore == 39) {
-                // contatore = 0; 
 
                 lbNuvola5.setVisible(true);
 
@@ -348,9 +365,17 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore 10
             
             
-            if (contatore == 50) {
+            if (contatore == 49) {
 
                 lbProva.setVisible(true);
+
+            } // endif contatore 10
+            
+            
+            if (contatore == 49) {
+                // contatore = 0; 
+
+                lbNotifica.setVisible(true);
 
             } // endif contatore 10
             
