@@ -95,6 +95,7 @@ public class Provalau2 extends javax.swing.JFrame {
         lbNuvola3 = new javax.swing.JLabel();
         lbNuvola2 = new javax.swing.JLabel();
         lbNuvola1 = new javax.swing.JLabel();
+        lbAnime = new javax.swing.JLabel();
         lbVirgilio = new javax.swing.JLabel();
         lbDante = new javax.swing.JLabel();
         lbSfondo = new javax.swing.JLabel();
@@ -156,13 +157,17 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(lbNuvola1);
         lbNuvola1.setBounds(0, 0, 660, 470);
 
+        lbAnime.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\animemov1.gif")); // NOI18N
+        jPanel2.add(lbAnime);
+        lbAnime.setBounds(0, 0, 660, 470);
+
         lbVirgilio.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\movirg1.gif")); // NOI18N
         jPanel2.add(lbVirgilio);
         lbVirgilio.setBounds(0, 0, 660, 470);
 
         lbDante.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\dantemov6.gif")); // NOI18N
         jPanel2.add(lbDante);
-        lbDante.setBounds(0, 0, 660, 472);
+        lbDante.setBounds(0, 0, 660, 470);
 
         lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\sfondoanimepic.jpg")); // NOI18N
         jPanel2.add(lbSfondo);
@@ -251,6 +256,7 @@ public class Provalau2 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btSalta;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbAnime;
     private javax.swing.JLabel lbDante;
     private javax.swing.JLabel lbLibro;
     private javax.swing.JLabel lbNuvola1;
@@ -327,22 +333,22 @@ public class Provalau2 extends javax.swing.JFrame {
 
             } // endif contatore 10
 
-            if (contatore == 41) {
+            if (contatore == 39) {
                 // contatore = 0; 
 
                 lbNuvola5.setVisible(true);
 
             } // endif contatore 10
-
-            if (contatore == 50) {
+            
+            
+            if (contatore == 45) {
 
                 lbNuvola5.setVisible(false);
 
             } // endif contatore 10
-
             
             
-            if (contatore == 62) {
+            if (contatore == 50) {
 
                 lbProva.setVisible(true);
 
