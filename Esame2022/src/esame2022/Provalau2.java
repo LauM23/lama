@@ -48,7 +48,7 @@ public class Provalau2 extends javax.swing.JFrame {
         B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola5.setIcon(new ImageIcon(B));
         
-        A = new ImageIcon("media/notifica.png");
+        A = new ImageIcon("media/notificaa.png");
         B = A.getImage().getScaledInstance(lbNotifica.getWidth(), lbNotifica.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNotifica.setIcon(new ImageIcon(B));
 
@@ -140,11 +140,11 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(lbProva);
         lbProva.setBounds(50, 310, 250, 70);
 
-        lbNotifica.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\notifica.png")); // NOI18N
+        lbNotifica.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\notificaa.png")); // NOI18N
         jPanel2.add(lbNotifica);
-        lbNotifica.setBounds(0, 0, 660, 470);
+        lbNotifica.setBounds(-10, 0, 660, 470);
 
-        lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov1.gif")); // NOI18N
+        lbLibro.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libromov2.gif")); // NOI18N
         jPanel2.add(lbLibro);
         lbLibro.setBounds(0, 0, 660, 470);
 
@@ -344,14 +344,14 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore 10
 
             
-            if (contatore == 38) {
+            if (contatore == 36) {
 
                 lbNuvola4.setVisible(false);
 
             } // endif contatore 10
 
             
-            if (contatore == 39) {
+            if (contatore == 37) {
 
                 lbNuvola5.setVisible(true);
 
@@ -365,14 +365,14 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore 10
             
             
-            if (contatore == 49) {
+            if (contatore == 50) {
 
                 lbProva.setVisible(true);
 
             } // endif contatore 10
             
             
-            if (contatore == 49) {
+            if (contatore == 50) {
                 // contatore = 0; 
 
                 lbNotifica.setVisible(true);
