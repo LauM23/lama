@@ -256,7 +256,7 @@
         <Component class="javax.swing.JLabel" name="lbOgg8">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\colomba-1.jpg"/>
+              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\torceri.png"/>
             </Property>
           </Properties>
           <Events>
@@ -264,7 +264,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="560" y="30" width="90" height="40"/>
+              <AbsoluteConstraints x="470" y="70" width="40" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -286,23 +286,22 @@
         <Component class="javax.swing.JLabel" name="lbOgg6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\torcereD.jpg"/>
+              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\rocca.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lbOgg6MouseClicked"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="150" y="300" width="70" height="60"/>
+              <AbsoluteConstraints x="160" y="50" width="-1" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="lbOgg5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\pergamena1.jpg"/>
+              <Image iconType="2" name="C:\Users\lauma\OneDrive\Documenti\GitHub\lama\Esame2022\media\mantello.png"/>
             </Property>
           </Properties>
           <Events>
@@ -310,7 +309,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="90" y="40" width="70" height="90"/>
+              <AbsoluteConstraints x="133" y="200" width="110" height="60"/>
             </Constraint>
           </Constraints>
         </Component>

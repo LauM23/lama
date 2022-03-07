@@ -163,14 +163,14 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(lbHaivinto);
         lbHaivinto.setBounds(0, 0, 660, 470);
 
-        lbOgg8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\colomba-1.jpg")); // NOI18N
+        lbOgg8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\torceri.png")); // NOI18N
         lbOgg8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg8MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg8);
-        lbOgg8.setBounds(560, 30, 90, 40);
+        lbOgg8.setBounds(470, 70, 40, 60);
 
         lbOgg7.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada.png")); // NOI18N
         lbOgg7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -181,24 +181,23 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(lbOgg7);
         lbOgg7.setBounds(478, 230, 70, 30);
 
-        lbOgg6.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\torcereD.jpg")); // NOI18N
-        lbOgg6.setText("jLabel1");
+        lbOgg6.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\rocca.png")); // NOI18N
         lbOgg6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg6MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg6);
-        lbOgg6.setBounds(150, 300, 70, 60);
+        lbOgg6.setBounds(160, 50, 51, 60);
 
-        lbOgg5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\pergamena1.jpg")); // NOI18N
+        lbOgg5.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\mantello.png")); // NOI18N
         lbOgg5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg5MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg5);
-        lbOgg5.setBounds(90, 40, 70, 90);
+        lbOgg5.setBounds(133, 200, 110, 60);
 
         lbOgg4.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\leggio.png")); // NOI18N
         lbOgg4.addMouseListener(new java.awt.event.MouseAdapter() {
