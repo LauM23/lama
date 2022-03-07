@@ -50,9 +50,9 @@ public class FinestraGioco extends javax.swing.JFrame {
         lbNOgg3 = new javax.swing.JLabel();
         lbNOgg2 = new javax.swing.JLabel();
         lbNOgg1 = new javax.swing.JLabel();
-        lbHaivinto = new javax.swing.JLabel();
         lbTimer = new javax.swing.JLabel();
         lbTrovati = new javax.swing.JLabel();
+        lbHaivinto = new javax.swing.JLabel();
         lbOgg8 = new javax.swing.JLabel();
         lbOgg7 = new javax.swing.JLabel();
         lbOgg6 = new javax.swing.JLabel();
@@ -144,13 +144,6 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(lbNOgg1);
         lbNOgg1.setBounds(60, 400, 120, 30);
 
-        lbHaivinto.setFont(new java.awt.Font("Perpetua", 1, 60)); // NOI18N
-        lbHaivinto.setForeground(new java.awt.Color(255, 255, 255));
-        lbHaivinto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbHaivinto.setText("HAI VINTO!");
-        jPanel1.add(lbHaivinto);
-        lbHaivinto.setBounds(0, 0, 660, 470);
-
         lbTimer.setFont(new java.awt.Font("Perpetua", 1, 24)); // NOI18N
         lbTimer.setForeground(new java.awt.Color(178, 123, 142));
         lbTimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -163,6 +156,13 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(lbTrovati);
         lbTrovati.setBounds(270, 0, 120, 20);
 
+        lbHaivinto.setFont(new java.awt.Font("Perpetua", 1, 60)); // NOI18N
+        lbHaivinto.setForeground(new java.awt.Color(255, 255, 255));
+        lbHaivinto.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbHaivinto.setText("HAI VINTO!");
+        jPanel1.add(lbHaivinto);
+        lbHaivinto.setBounds(0, 0, 660, 470);
+
         lbOgg8.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\colomba-1.jpg")); // NOI18N
         lbOgg8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -170,16 +170,16 @@ public class FinestraGioco extends javax.swing.JFrame {
             }
         });
         jPanel1.add(lbOgg8);
-        lbOgg8.setBounds(240, 90, 90, 40);
+        lbOgg8.setBounds(560, 30, 90, 40);
 
-        lbOgg7.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\leggio.jpg")); // NOI18N
+        lbOgg7.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada.png")); // NOI18N
         lbOgg7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg7MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg7);
-        lbOgg7.setBounds(150, 190, 220, 50);
+        lbOgg7.setBounds(478, 230, 70, 30);
 
         lbOgg6.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\torcereD.jpg")); // NOI18N
         lbOgg6.setText("jLabel1");
@@ -200,41 +200,41 @@ public class FinestraGioco extends javax.swing.JFrame {
         jPanel1.add(lbOgg5);
         lbOgg5.setBounds(90, 40, 70, 90);
 
-        lbOgg4.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\libroo.png")); // NOI18N
+        lbOgg4.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\leggio.png")); // NOI18N
         lbOgg4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg4MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg4);
-        lbOgg4.setBounds(410, 70, 200, 50);
+        lbOgg4.setBounds(380, 80, 60, 130);
 
-        lbOgg3.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\2nuvola-01.png")); // NOI18N
+        lbOgg3.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\contratto.png")); // NOI18N
         lbOgg3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg3MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg3);
-        lbOgg3.setBounds(-210, 280, 290, 110);
+        lbOgg3.setBounds(20, 300, 144, 76);
 
-        lbOgg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\4nuvola-01.png")); // NOI18N
+        lbOgg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\colombe.png")); // NOI18N
         lbOgg2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg2MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg2);
-        lbOgg2.setBounds(430, 210, 200, 240);
+        lbOgg2.setBounds(240, 60, 80, 50);
 
-        lbOgg1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
+        lbOgg1.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\botola.png")); // NOI18N
         lbOgg1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbOgg1MouseClicked(evt);
             }
         });
         jPanel1.add(lbOgg1);
-        lbOgg1.setBounds(-140, 30, 190, 180);
+        lbOgg1.setBounds(220, 190, 170, 90);
 
         btTimer.setText("START");
         btTimer.addActionListener(new java.awt.event.ActionListener() {
@@ -246,14 +246,14 @@ public class FinestraGioco extends javax.swing.JFrame {
         btTimer.setBounds(280, 290, 90, 30);
 
         lbSfondo.setBackground(new java.awt.Color(255, 255, 0));
-        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\Sfondo gioco.jpg")); // NOI18N
+        lbSfondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\Sfondogiocodef.jpg")); // NOI18N
         lbSfondo.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 lbSfondoMouseEntered(evt);
             }
         });
         jPanel1.add(lbSfondo);
-        lbSfondo.setBounds(0, 0, 660, 470);
+        lbSfondo.setBounds(0, 0, 660, 472);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -297,18 +297,6 @@ public class FinestraGioco extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_btTimerActionPerformed
-
-    private void lbOgg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg2MouseClicked
-        // TODO add your handling code here:
-
-        numerotrovati = numerotrovati + 1;
-        this.lbNOgg2.setVisible(false);
-        this.lbOgg2.setVisible(false);
-
-        MC2 = new MiaClipAudio("audio/button.wav");
-        MC2.start();
-
-    }//GEN-LAST:event_lbOgg2MouseClicked
 
     private void lbOgg3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg3MouseClicked
         // TODO add your handling code here:
@@ -423,6 +411,18 @@ public class FinestraGioco extends javax.swing.JFrame {
     private void btRestartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRestartActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btRestartActionPerformed
+
+    private void lbOgg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbOgg2MouseClicked
+        // TODO add your handling code here:
+        
+        numerotrovati = numerotrovati + 1;
+        this.lbNOgg2.setVisible(false);
+        this.lbOgg2.setVisible(false);
+
+        MC2 = new MiaClipAudio("audio/button.wav");
+        MC2.start();
+        
+    }//GEN-LAST:event_lbOgg2MouseClicked
 
     /**
      * @param args the command line arguments
