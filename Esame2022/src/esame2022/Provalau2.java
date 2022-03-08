@@ -48,7 +48,7 @@ public class Provalau2 extends javax.swing.JFrame {
         B = A.getImage().getScaledInstance(lbNuvola5.getWidth(), lbNuvola5.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNuvola5.setIcon(new ImageIcon(B));
         
-        A = new ImageIcon("media/notificaa.png");
+        A = new ImageIcon("media/notificadef.png");
         B = A.getImage().getScaledInstance(lbNotifica.getWidth(), lbNotifica.getHeight(), java.awt.Image.SCALE_DEFAULT);
         lbNotifica.setIcon(new ImageIcon(B));
 
@@ -63,7 +63,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
         lbNuvola5.setVisible(false);
         
-        lbProva.setVisible(false);
+        lbGioco.setVisible(false);
         
         lbNotifica.setVisible(false);
 
@@ -94,7 +94,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         btSalta = new javax.swing.JButton();
-        lbProva = new javax.swing.JLabel();
+        lbGioco = new javax.swing.JLabel();
         lbNotifica = new javax.swing.JLabel();
         lbLibro = new javax.swing.JLabel();
         lbNuvola5 = new javax.swing.JLabel();
@@ -130,17 +130,17 @@ public class Provalau2 extends javax.swing.JFrame {
         jPanel2.add(btSalta);
         btSalta.setBounds(285, 430, 90, 25);
 
-        lbProva.setForeground(new java.awt.Color(255, 255, 51));
-        lbProva.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\spada2.png")); // NOI18N
-        lbProva.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbGioco.setForeground(new java.awt.Color(255, 255, 51));
+        lbGioco.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\riqgioco2.png")); // NOI18N
+        lbGioco.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lbProvaMouseClicked(evt);
+                lbGiocoMouseClicked(evt);
             }
         });
-        jPanel2.add(lbProva);
-        lbProva.setBounds(50, 310, 250, 70);
+        jPanel2.add(lbGioco);
+        lbGioco.setBounds(134, 99, 187, 140);
 
-        lbNotifica.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\notificaa.png")); // NOI18N
+        lbNotifica.setIcon(new javax.swing.ImageIcon("C:\\Users\\lauma\\OneDrive\\Documenti\\GitHub\\lama\\Esame2022\\media\\notificadef.png")); // NOI18N
         jPanel2.add(lbNotifica);
         lbNotifica.setBounds(-10, 0, 660, 470);
 
@@ -216,7 +216,7 @@ public class Provalau2 extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btSaltaMouseClicked
 
-    private void lbProvaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbProvaMouseClicked
+    private void lbGiocoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbGiocoMouseClicked
         // TODO add your handling code here:
 
         Esame2022.finGioco.setVisible(true);
@@ -226,7 +226,7 @@ public class Provalau2 extends javax.swing.JFrame {
         
         Esame2022.finIniziale.setVisible(false);  // nasconde sè stessa
 
-    }//GEN-LAST:event_lbProvaMouseClicked
+    }//GEN-LAST:event_lbGiocoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -269,6 +269,7 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lbAnime;
     private javax.swing.JLabel lbDante;
+    private javax.swing.JLabel lbGioco;
     private javax.swing.JLabel lbLibro;
     private javax.swing.JLabel lbNotifica;
     private javax.swing.JLabel lbNuvola1;
@@ -276,7 +277,6 @@ public class Provalau2 extends javax.swing.JFrame {
     private javax.swing.JLabel lbNuvola3;
     private javax.swing.JLabel lbNuvola4;
     private javax.swing.JLabel lbNuvola5;
-    private javax.swing.JLabel lbProva;
     private javax.swing.JLabel lbSfondo;
     private javax.swing.JLabel lbVirgilio;
     // End of variables declaration//GEN-END:variables
@@ -365,14 +365,14 @@ public class Provalau2 extends javax.swing.JFrame {
             } // endif contatore 10
             
             
-            if (contatore == 50) {
+            if (contatore == 49) {
 
-                lbProva.setVisible(true);
+                lbGioco.setVisible(true);
 
             } // endif contatore 10
             
             
-            if (contatore == 50) {
+            if (contatore == 49) {
                 // contatore = 0; 
 
                 lbNotifica.setVisible(true);
